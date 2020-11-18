@@ -1,0 +1,27 @@
+---
+title: "Crotalines of Arizona"
+author: "Jack Kauphusman"
+date: "8/28/2020"
+output: html_document
+---
+
+```{r Packages, message=FALSE, warning=FALSE, include=FALSE}
+#Libraries
+packages<-c("dismo", "spocc", "rgdal", "rgbif","rdryad","utils","readxl","ggridges","viridis","rasterVis","maps","mapr", "ggmap",
+            "mapdata","raster", "sp", "ggplot2")
+sapply(packages, require, character.only=T)
+```
+
+```{r}
+# My favorite Arizona Rattlesnakes
+spp= c("Crotalus atrox", "Crotalus cerastes", "Crotalus molossus", "Crotalus tigris")
+
+dat <- occ(query = spp, from = 'gbif', gbifopts = list(hasCoordinate = TRUE))
+dat
+```
+
+# Common Crotaliness of Arizona
+
+The Western Diamondback Rattlesnake
+
+Species Distribution

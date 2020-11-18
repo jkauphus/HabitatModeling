@@ -4,6 +4,20 @@
 
 # Session Data files
 .RData
+*Data/
+*.rds
+*SDM_Data
+*srtm_59_12
+*srtm_60_11
+*.Rproj
+*.png
+*.csv
+*.txt
+*.tif
+*.kml
+*wc10/
+*.pdf
+*.asc
 
 # User-specific files
 .Ruserdata
